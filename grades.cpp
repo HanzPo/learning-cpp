@@ -9,16 +9,16 @@ int main() {
 
   cout << "Please enter your top 6 grades, separated by spaces\n";
 
-  for (int i = 0; i < 6; i++) {
-    cout << "Entering grade " << i + 1 << " of " << 6 << ": ";
+  for (int i = 0; i < (int) size(grades); i++) {
+    cout << "Entering grade " << i + 1 << " of " << size(grades) << ": ";
     cin >> grades[i];
   }
 
-  for (int i = 0; i < 6; i++) {
+  for (int i = 0; i < (int) size(grades); i++) {
     sum += grades[i];
   }
 
-  cout << "Your top 6 average is: " << sum / 6;
+  cout << "Your top 6 average is: " << (double) sum / 6;
   
   return 0;
 }
