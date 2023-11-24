@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int fib(int n)
+unsigned int fib(unsigned int n)
 {
   if (n < 1)
   {
@@ -21,7 +21,7 @@ int fib(int n)
 
 int main()
 {
-  int n;
+  unsigned int n;
   char input;
 
   cout << "Would you like to\n1) Generate a sequence up to n\n2) Get the nth number in the fibonacci sequence\nEnter 1 or 2 ->";
@@ -31,7 +31,7 @@ int main()
   {
     cout << "This program will print the fibonacci sequence up to n\nn = ";
     cin >> n;
-    for (int i = 1; i <= n; i++)
+    for (unsigned int i = 1; i <= n; i++)
     {
       cout << fib(i) << " ";
     }
