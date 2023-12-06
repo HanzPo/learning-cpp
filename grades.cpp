@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -18,7 +19,7 @@ int main() {
     sum += grades[i];
   }
 
-  cout << "Your top 6 average is: " << (double) sum / 6;
+  cout << "Your top 6 average is: " << fixed << setprecision(2) << (double) sum / 6;
   
   return 0;
 }
